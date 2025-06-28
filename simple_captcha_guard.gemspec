@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors       = "Ahmed Mahir Tazwar"
   spec.email         = "tazwarutshas@gmail.com"
   spec.summary       = "Simple CAPTCHA gem for Rails"
-  spec.description   = "A simple CAPTCHA system to block bots in Rails apps"
+  spec.description   = "A simple CAPTCHA system to block bots in Rails apps."
   spec.homepage      = "https://github.com/Utshas/simple-captcha-guard"
   spec.license       = "MIT"
 

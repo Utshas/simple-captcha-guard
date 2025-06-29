@@ -1,18 +1,21 @@
 # SimpleCaptchaGuard
+A simple light weight captcha guard to guard the bots.
 
-A simple CAPTCHA gem for Rails to prevent bots from submitting forms.
+![Alt text](sample.png)
+
+A simple CAPTCHA gem for Rails to prevent bots from submitting forms. And the usage is also so simple.
 
 - ImageMagick needs to be installed in your system
 
 ## Usage
 
-Add `captcha_tag` in your form. Here is a simple code example:
+Just add `captcha_tag` in your form. It will show you a captcha. Here is a simple code example:
 ```
   <%= captcha_tag %></br>Enter captcha : 
   <%= text_field_tag :captcha_input %></br></br>
 ```
 
-and `verify_captcha(params[:captcha_input])` in your controller. Here is a sample code example:
+and then add `verify_captcha(params[:captcha_input])` in your controller. Here is a sample code example:
 ```
   # POST /inquiries or /inquiries.json
   def create
@@ -33,3 +36,7 @@ and `verify_captcha(params[:captcha_input])` in your controller. Here is a sampl
     end
   end
 ```
+
+Above is a very simple code example. You can use javascript and configure your route and add a method in your controller to implement the feature of `try another captcha`
+
+If you don't want user to lose the data that they already entered into the form, you can implement the captcha before showing the form or handle the captcha failure in a different way.

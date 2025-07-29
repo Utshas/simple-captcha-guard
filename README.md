@@ -1,5 +1,6 @@
 # SimpleCaptchaGuard
-A simple light weight captcha guard to guard the bots.
+A simple light weight captcha guard to guard the bots. For details, you can read this article: https://blog.devgenius.io/simplecaptchaguard-add-captcha-protection-to-your-rails-forms-in-seconds-785413d3b807
+But, in short, the usage is as below:
 
 ![Alt text](sample.png)
 
@@ -39,4 +40,4 @@ and then add `verify_captcha(params[:captcha_input])` in your controller. Here i
 
 Above is a very simple code example. You can use javascript and configure your route and add a method in your controller to implement the feature of `try another captcha`
 
-If you don't want user to lose the data that they already entered into the form, you can implement the captcha before showing the form or handle the captcha failure in a different way.
+If you don't want user to lose the data that they already entered into the form, you can implement the captcha before showing the form or handle the captcha failure in a different way, like using ajax.
